@@ -6,7 +6,7 @@ export const ProductCard = (props) => {
         var priceCrossed= price + (discountRate * price)/100;
         return priceCrossed;
     }
-    const cartId = localStorage.getItem("cartId");
+
 
     return (
         <div className="col-md-3 col-sm-6">
@@ -21,7 +21,7 @@ export const ProductCard = (props) => {
                     <ins>{price}</ins> <del>${crossedOutPrice(price, discountRate)}</del>
                 </div>
                 <div className="product-option-shop">
-                    <AddToCartButton cartId={cartId} name = {name} price = {price} image = {image} id = {id} nbToAdd={1} />
+                    <AddToCartButton  name = {name} price = {price} image = {image} id = {id} nbToAdd={1} />
                 </div>
             </div>
         </div>

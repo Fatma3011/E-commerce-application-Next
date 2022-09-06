@@ -14,7 +14,7 @@ export const RecentlyViewedForFP = () => {
             {recentlyViewedProducts && recentlyViewedProducts.map((item, index)=>(
                 <div className="thubmnail-recent" key={index}>
                     <img src={`/assets/img/${item.imageName}`} className="recent-thumb" alt />
-                    <h2><a href>{item.name}</a></h2>
+                    <h2><a >{item.name}</a></h2>
                     <div className="product-sidebar-price">
                         <ins>{item.price} € </ins> <del>{crossedOutPrice(item.price, item.discountRate )} €</del>
                     </div>

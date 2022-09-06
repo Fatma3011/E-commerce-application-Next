@@ -1,9 +1,7 @@
 import React, { useEffect } from 'react';
 import {useSelector} from 'react-redux';
-import {Link, useNavigate} from 'react-router-dom';
 
 export const CartTotals = () => {
-    const navigate = useNavigate();
     const cartData = useSelector(state => state.cart);
     useEffect(()=>{},[cartData])
     return(

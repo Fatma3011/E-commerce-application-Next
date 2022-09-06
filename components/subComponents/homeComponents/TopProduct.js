@@ -20,11 +20,6 @@ export const TopProduct = (props) => {
             JSON.parse(localStorage.getItem("recentlyViewed"))
         );
     }, []);
-    // useEffect(() => {
-    //     if(data){
-    //         setTopSellers(data)
-    //     }
-    // }, [data]);
     return (
         <div className="product-widget-area">
             <div className="zigzag-bottom" />

@@ -1,11 +1,10 @@
-import {Link, useNavigate} from 'react-router-dom';
+import Link from 'next/link'
 import {useSelector, useDispatch} from 'react-redux';
 import { addProductToCart } from '../../../services/CartService';
 import { putCartData } from '../../../redux/reducers/cart/cartActions';
 // il reste le input
 export const ShopTableCart = () => {
     const cartData = useSelector(state => state.cart);
-    const navigate = useNavigate();
     const dispatch = useDispatch();
 
     let sameItem = [];
@@ -123,12 +122,12 @@ export const ShopTableCart = () => {
                             >×</a>
                         </td>
                         <td className="product-thumbnail">
-                            <a href="single-product.html">
+                            <Link href={`/product/${item.id}`}>
                                 <img width={145} height={145} alt="PIC" 
                                     className="shop_thumbnail" 
                                     src={`/assets/img/${item.imageName}`} 
                                 />
-                            </a>
+                            </Link>
                         </td>
                         <td className="product-name">
                         <Link href={`/product/${item.id}`}>{item.name}</Link>
@@ -162,13 +161,12 @@ export const ShopTableCart = () => {
                 ))}
                 <tr>
                 <td className="actions" colSpan={6}>
-                        <Link href="/checkout">
+                        <Link href="/cart/checkout">
                             <input type="button"
                                 defaultValue="Checkout"
                                 name="proceed"
                                 className="checkout-button button alt wc-forward" />
                         </Link>
-
                     </td>
                 </tr>
             </tbody>

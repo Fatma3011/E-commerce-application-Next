@@ -72,7 +72,7 @@ export const Header = (props) => {
                         <div className="col-sm-4">
                             <div className="logo" style={{ width: 100, height: 100 }}>
                                 <h1>
-                                    <Link href="/home"><a><img alt ="" src="/assets/img/logo.png" /></a></Link>
+                                    <Link href="/"><a><img alt ="" src="/assets/img/logo.png" /></a></Link>
                                 </h1>
                             </div>
                         </div>
@@ -91,7 +91,7 @@ export const Header = (props) => {
                         <div className="col-sm-4">
                         {cartId && totalQuantities !== 0 &&
                             <div className="shopping-item">
-                            <Link href="cart">
+                            <Link href="/cart">
                                     <a>
                                     Cart :  <span className="cart-amunt">
                                         {data.total} 

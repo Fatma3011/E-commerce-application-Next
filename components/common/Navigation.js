@@ -21,7 +21,7 @@ export const Navigation = (props) => {
                     <div className="navbar">
                         <ul className="nav navbar-nav navbar-expand">
                             <li className="active">
-                                <Link href="/home">
+                                <Link href="/">
                                     Home
                                 </Link>
                             </li>
