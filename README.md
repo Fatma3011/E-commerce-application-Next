@@ -12,7 +12,7 @@ This repository contains the Next.js version of the Phone Store E-commerce Web A
 ## Technology Stack
 - **Framework:** Next.js
 - **Language:** JavaScript (ES6)
-- **Styling:** CSS/SCSS or Styled Components
+- **Styling:** CSS
 - **State Management:** State management using React Context or Redux
 - **Backend Integration:** Mock backend using `json-server` (for demonstration purposes)
 
