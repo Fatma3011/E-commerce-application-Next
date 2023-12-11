@@ -1,34 +1,49 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Next.js Version of Phone Store E-commerce Application
 
-## Getting Started
+## Overview
+This repository contains the Next.js version of the Phone Store E-commerce Web Application. Originally developed in React, this application has been transitioned to Next.js to leverage its server-side rendering capabilities and enhanced SEO features. The application offers a seamless and efficient shopping experience for mobile phones.
 
-First, run the development server:
+## Features
+- **Enhanced Performance:** Utilizes Next.js for improved loading times and overall performance.
+- **SEO Friendly:** Server-side rendering enhances SEO, making the site more visible and accessible.
+- **Responsive Design:** Fully responsive web design ensuring compatibility with all devices.
+- **E-commerce Functionality:** Includes all essential e-commerce features such as product listing, search functionality, detailed product descriptions, cart management, and checkout process.
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+## Technology Stack
+- **Framework:** Next.js
+- **Language:** JavaScript (ES6)
+- **Styling:** CSS/SCSS or Styled Components
+- **State Management:** State management using React Context or Redux
+- **Backend Integration:** Mock backend using `json-server` (for demonstration purposes)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Local Development
+To run the application locally, follow these steps:
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+1. Clone the repository:
+   ```
+   git clone [Your Repository URL]
+   ```
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+2. Install the dependencies:
+   ```
+   cd [Your Project Directory]
+   npm install
+   ```
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+3. Run the mock server (if applicable):
+   ```
+   json-server --watch db.json
+   ```
 
-## Learn More
+4. Start the Next.js application:
+   ```
+   npm run dev
+   ```
 
-To learn more about Next.js, take a look at the following resources:
+The application should now be running on `localhost:3000` (or your specified port).
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Contributing
+Contributions to enhance or improve the application are welcome. Please read through our contributing guidelines for more details on submitting pull requests.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## License
+This project is licensed under the [MIT License](LICENSE.md).
