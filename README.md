@@ -6,7 +6,7 @@ This repository contains the Next.js version of the Phone Store E-commerce Web A
 ## Features
 - **Enhanced Performance:** Utilizes Next.js for improved loading times and overall performance.
 - **SEO Friendly:** Server-side rendering enhances SEO, making the site more visible and accessible.
-- **Responsive Design:** Fully responsive web design ensuring compatibility with all devices.
+- **Responsive Design:** Responsive web design ensuring compatibility with all devices.
 - **E-commerce Functionality:** Includes all essential e-commerce features such as product listing, search functionality, detailed product descriptions, cart management, and checkout process.
 
 ## Technology Stack
@@ -21,16 +21,16 @@ To run the application locally, follow these steps:
 
 1. Clone the repository:
    ```
-   git clone [Your Repository URL]
+   git clone [Repository URL]
    ```
 
 2. Install the dependencies:
    ```
-   cd [Your Project Directory]
+   cd [Project Directory]
    npm install
    ```
 
-3. Run the mock server (if applicable):
+3. Run the mock server:
    ```
    json-server --watch db.json
    ```
@@ -40,10 +40,5 @@ To run the application locally, follow these steps:
    npm run dev
    ```
 
-The application should now be running on `localhost:3000` (or your specified port).
+The application should now be running on `localhost:3001` (because the mock server should be running on `localhost:3000`).
 
-## Contributing
-Contributions to enhance or improve the application are welcome. Please read through our contributing guidelines for more details on submitting pull requests.
-
-## License
-This project is licensed under the [MIT License](LICENSE.md).
